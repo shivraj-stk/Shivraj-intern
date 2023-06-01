@@ -1,0 +1,122 @@
+/* '*' means for all */
+*,
+*:before,
+*:after
+{
+    margin: 0;
+    box-sizing: border-box;
+}
+/*---------------------*/
+/* For background color */
+body{
+    height: 100px;
+    background: #066acd;
+}
+/*---------------------*/
+/* This gives the overall interface for the whole todo list box */
+.container{
+    width: 40%;
+    top: 30%;
+    left: 30%;
+    background: white;
+    border-radius: 10px;
+    position: absolute; 
+}
+/*---------------------*/
+/* Apply a padding of 30 pixels on the top and bottom, and 20 pixels on the left and right */
+#newtask{
+
+    padding: 30px 20px;
+}
+/*---------------------*/
+/* This is a comment describing the styling for add todo item box */
+#newtask input{
+    /* Set the width, height, padding, and other styling properties for the input element */
+    width: 75%;
+    padding: 12px;
+    color: #111111;
+    font-weight: 500;
+    border-radius: 5px;
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+    border: 2px solid #d1d3d4;
+}
+/*---------------------*/
+/*when user click the textbox*/
+#newtask input:focus{
+    outline: none;
+    border-color: #0d75ec;
+}
+/*---------------------*/
+/* This is a comment describing the styling for add todo button */
+#newtask button{
+    /* Set the float, font-weight, font-size, and other styling properties for the button element */
+    float: right;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #0d75ec;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    width: 20%;
+    height: 45px;
+    border-radius: 5px;
+    font-family: 'Poppins',sans-serif;
+}
+/*---------------------*/
+/* This gives the interface for the Added todo item list */
+#tasks{
+    border-radius: 10px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 30px 20px;
+    margin-top: 10px;
+}
+/*---------------------*/
+/* This is a comment describing the styling for added todo item list */
+.task{
+    border-radius: 5px;
+    align-items: center;
+    border: 1px solid #939697;
+    cursor: pointer;
+    background-color: #c5e1e6;
+    height: 50px;
+    margin-bottom: 8px;
+    padding: 5px 10px;
+    display: flex;
+}
+/*---------------------*/
+/* This is a comment describing the styling for name of the added todo item*/
+.task span{
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+/*---------------------*/
+/* This is a comment describing the styling for delete button */
+.task button{
+    background-color: #6583e5;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    height: 100%;
+    width: 68px;
+    border-radius: 5px;
+    margin-left: 355px;
+}
+/*---------------------*/
+/* This is a comment describing the styling for check box*/
+.status
+{
+    background-color: #6583e5;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    height: 100%;
+    width: 40px;
+    border-radius: 5px;
+
+}
+/*---------------------*/
